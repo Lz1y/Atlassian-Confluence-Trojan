@@ -16,7 +16,7 @@ public class UpdateMethod {
 			//cPool.importPackage("java.util.List");
 			
 			//设置class文件的位置
-			cPool.insertClassPath("/Users/ziyi.liu/Downloads/quote-macro-1.0/com/unlimax/confluence/plugin/macro");
+			cPool.insertClassPath("{path}/quote-macro-1.0/com/unlimax/confluence/plugin/macro");
 			cPool.importPackage("com.atlassian.confluence.content.render.xhtml.ConversionContext");
 			cPool.importPackage("com.atlassian.confluence.macro.Macro");
 			cPool.importPackage("com.atlassian.confluence.macro.Macro.BodyType");
