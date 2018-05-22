@@ -1,5 +1,6 @@
-# Atlassian-Confluence-Trojan
-Atlassian-Confluence-Trojan  
+# Atlassian-Confluence-Trojan   
+Ref:http://www.lz1y.cn/archives/1439.html
+Atlassian-Confluence-Trojan  
 Get a shell by deploy this Trojan-Marco  
 制作方法:  
 1. 先将quote-macro-1.0.jar解压  
